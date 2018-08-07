@@ -1,9 +1,14 @@
 @import url('https://unpkg.com/normalize.css@7.0.0/normalize.css');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+/* theme-color: #6636cc */
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   background-color: #ffffff;
+  color: #555555;
 }
 
 header {
@@ -12,6 +17,18 @@ header {
 
 h1 {
   margin: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: 700;
+  color: #6636cc;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -39,11 +56,33 @@ nav.nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  text-transform: uppercase;
   text-align: center;
 }
 
 nav.nav ul li {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+nav.nav ul li > a:link,
+nav.nav ul li > a:visited {
+  color: #555555;
+}
+
+nav.nav ul li > a:active,
+nav.nav ul li > a:hover {
+  text-decoration: none;
+  color: #555555;
+}
+
+body > footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #6636cc;
+  color: #fff;
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
